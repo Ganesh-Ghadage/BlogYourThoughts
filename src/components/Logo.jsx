@@ -1,9 +1,9 @@
 import React from 'react'
-import blogImg from '../../public/blog.png'
+import appwriteServices from '../appwrite/config'
 
 function Logo({width = '100px'}) {
     return (
-        <img src='../../public/blog.png' alt='Blog' width={'40px'}/>
+        <img src={appwriteServices.getFilePreview('blog')} alt='Blog' width={'40px'}/>
     )
 }
 
